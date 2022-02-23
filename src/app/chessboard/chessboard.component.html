@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngFor="let column of chessboard; let i = index">
+    <div
+      *ngFor="let row of chessboard[i]"
+      class="row"
+      [ngStyle]="colorTiles(row)"
+    >
+      <p>{{ row }}</p>
+    </div>
+  </div>
+</div>
